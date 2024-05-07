@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const { data } = await axios<{ users: User[] }>(
+    const { data } = await axios.get<{ users: User[] }>(
       "https://dummyjson.com/users"
     );
 
