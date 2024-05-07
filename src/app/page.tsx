@@ -53,9 +53,10 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mt-10 max-w-4xl">
-        <div>
-          <h1 className="text-xl font-bold">Todo List</h1>
+      <div className="container mt-10">
+        <h2 className="text-xl font-bold">1. Auto Delete Todo List</h2>
+        <div className="max-w-4xl">
+          <p className="text-xl mt-4">Todo List 🍎🥦</p>
           <div className="grid md:grid-cols-3 gap-8 mt-4">
             <div>
               <div className="flex flex-col gap-2">
@@ -103,6 +104,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="mt-20">
+          <h2 className="text-xl font-bold">
+            2. Create data from API (OPTIONAL)
+          </h2>
+          🤙
+          <a
+            href={`/api/group-user`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 underline text-gray-600"
+          >
+            Click (/api/group-user)
+          </a>
+        </div>
       </div>
     </>
   );
@@ -131,7 +146,8 @@ const ButtonItem = ({ label, onClick }: ButtonItemProps) => {
   return (
     <div className="flex flex-col">
       <Button variant={"secondary"} onClick={onClick}>
-        {label}<span className="text-xs text-gray-400 ml-1">({duration})</span>
+        {label}
+        <span className="text-xs text-gray-400 ml-1">({duration})</span>
       </Button>
     </div>
   );
