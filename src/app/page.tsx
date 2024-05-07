@@ -115,7 +115,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="mt-4 underline text-gray-600"
           >
-            {window?.location?.origin}/api/group-user
+            Click (/api/group-user)
           </a>
         </div>
       </div>
